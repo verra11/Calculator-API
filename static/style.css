@@ -1,0 +1,58 @@
+body{
+	background-color: #54575c;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+	font-family: sans-serif;
+}
+
+.container{
+	background: #b6bbc2;
+	border: 1px solid;
+	border-radius: 5px;	
+	margin-top: 5%;
+	margin-left: 40%;
+	margin-right: 40%;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.button{
+	background: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background: green;
+}
+
+.select{
+	font-size: 16px;
+	padding: 10px;
+}
+
+.my-form{
+	font-family: sans-serif;
+	padding: 20px;
+}
+
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+
+.my-form label{
+	font-size: 18px;
+	display: block;
+}
+
+.my-form input[type="text"]{
+	font-size: 16px;
+	background: white;
+	border: 1px solid;
+	padding: 8px;
+}
