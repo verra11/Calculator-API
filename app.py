@@ -1,6 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
+
+result = {'Answer': 0}
 
 def add(a, b):
 	return float(a) + float(b)
@@ -71,7 +73,9 @@ def submit():
 		elif op == 'xor':
 			val = XOR(num1, num2)
 
-	return render_template("index.html", num1=num1, num2=num2, op=op, val=val)	
+		result['Answer'] = val
+	# return render_template("index.html", num1=num1, num2=num2, op=op, val=val)	
+	return jsonify(result)	
 
 if __name__ == "__main__":
 	app.run(debug=True)
